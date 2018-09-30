@@ -1,0 +1,48 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing:border-box;
+}
+body{
+	font-family: PingFangSC-Light,'STHeiti Light','helvetica neue','hiragino sans gb',arial,'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+
+}
+a{
+	text-decoration: none;		
+}
+/*导航栏*/
+.head-section{
+	height: 74px;
+	background-color: #ffffff;
+	border-bottom: 2px solid #48ba64; /*#46b962, #87c88d, #5ea9a9, #71c47d;*/
+
+}
+.head-contain{
+	width: 1000px;
+	margin:0 auto;
+	display: flex;
+	justify-content:space-between;
+}
+.head-logo{
+	
+	margin-top: 16px;	
+}
+.head-logo img{
+	width: 113px;
+	height: 42px;
+}
+.head-register{
+	
+}
+.head-register i{
+	margin:0 12px 0 12px;
+}
+.head-register-item{
+	display: inline;
+	font-size: 12px;
+	line-height: 74px;
+	color: #666666;
+}
+.head-register-item:hover{
+	color: #39c05e;
+}
