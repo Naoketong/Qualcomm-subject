@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+	margin:0;
+	padding: 0;
+	box-sizing:border-box;
+}
+a{
+	text-decoration: none;		
+}
+.teacher-section{
+	width: 960px;
+	margin:0 auto;
+}
+.teacher-title{
+	margin-bottom: 40px;
+}
+.teacher-list{
+	position: relative;
+	width: 100%;
+	font-size: 0;
+	margin-bottom: 50px;
+}
+.teacher-item{
+	display: inline-block;
+	width:240px;
+	height: 210px;
+	text-align: center;
+}
+.teacher-item-img{
+	width: 78px;
+	height: 78px;
+	border-radius: 50%;
+	margin-top: 12px;
+}
+.teacher-item-name{
+	font-size: 14px;
+	color: #333;
+	margin:13px 0 12px;
+}
+.teacher-item-title{
+	font-size: 12px;
+	color: #999999;
+	line-height: 18px;
+	margin-bottom: 12px;
+}
+.teacher-item-text{
+	font-size: 12px;
+	color:#737373;
+}
+.teacher-item-left{
+	position: absolute;
+	top:50%;
+	left: 0;
+	display: inline-block;
+	width: 25px;
+	height: 40px;
+	background-color: #e2e6ea;
+	opacity: 0;
+}
+.teacher-item-left:after{
+	content: '';
+	position: absolute;
+	display: inline-block;
+	left: 10px;
+	top:15px;
+	width: 10px;
+	height: 10px;
+	border-left:2px solid #f6f6f6;
+	border-bottom:2px solid #f6f6f6;
+	transform: rotate(45deg);
+}
+.teacher-item-right{
+	position: absolute;
+	top:50%;
+	right: 0;
+	display: inline-block;
+	width: 25px;
+	height: 40px;
+	background-color: #e2e6ea;
+	opacity: 0;
+}
+.teacher-item-right:after{
+	content: '';
+	position: absolute;
+	display: inline-block;
+	right: 10px;
+	top:15px;
+	width: 10px;
+	height: 10px;
+	border-right:2px solid #f6f6f6;
+	border-bottom:2px solid #f6f6f6;
+	transform: rotate(-45deg);
+
+}
+.teacher-list:hover .teacher-item-left{
+	opacity: 1;
+}
+.teacher-list:hover .teacher-item-right{
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+.product-section{
+	width: 960px;
+	margin:0 auto;
+	font-size: 0;
+	border-bottom: 1px solid #f5f5f5;
+}
+.product-title{
+	margin-bottom: 30px;
+}
+.product-introduce{
+	display: flex;
+	margin-bottom: 30px;
+}
+.product-img{
+}
+.product-img img{
+	width: 300px;
+	height: 210px;
+}
+.product-describe{
+	margin-left: 20px;
+}
+.product-title{
+	font-size: 20px;
+	color: #333333;
+}
+.product-text{
+	font-size: 13px;
+	color: #666666;
+	line-height: 23px;
+	margin-bottom: 15px;
+}
+.product-button{
+	display: inline-block;
+	font-size: 15px;
+	color: #00a8ff;
+	line-height: 40px;
+	padding:0 36px 0 36px;
+	border:1px solid #00a8ff;
+	border-radius: 3px;
+	margin-right: 15px;
+}
+.product-button:hover{
+	background-color: #00a8ff;
+	color: #fff;
+}
+.correlation-product{
+	margin-top: 25px;
+}
+.correlation-product span{
+	font-size: 15px;
+	color: #666666;
+	margin-right: 11px;
+}
+.correlation-product-item{
+	display: inline-block;
+	width: 196px;
+	text-align: center;
+	font-size: 12px;
+	color: #1c7c89;
+	background-color: #caeaef;
+	line-height: 30px;
+	border-radius: 50px;
+	margin-right:10px;
+}
+
+.user-example-section{
+	width: 960px;
+	margin:0 auto;
+	font-size: 0;
+	margin-top: 30px;
+	border-bottom: 1px solid #f5f5f5;
+}
+.user-example-item{
+	display: inline-block;
+	margin: 0 30px 30px 0;
+}
+.user-example-item:nth-child(3){
+	margin-right: 0px;
+}
+
+	</style>
+
+
+</head>
+<body>
+	<div class="teacher-section">
+		<img class="teacher-title" src="img/teacher.png">
+		<div class="teacher-list">
+			<div class="teacher-item">
+				<img class="teacher-item-img" src="img/17.png">
+				<p class="teacher-item-name">小不能够好吧</p>
+				<h5 class="teacher-item-title">中科创达软件工程师
+				<br>Qualcomm开发者社区技术支持</h5>
+				<p class="teacher-item-text">从事安卓驱动研究，专注于display驱动研发，在嵌入式软件开发上有...</p>
+			</div>
+			<div class="teacher-item">
+				<img class="teacher-item-img" src="img/17.png">
+				<p class="teacher-item-name">小不能够好吧</p>
+				<h5 class="teacher-item-title">中科创达软件工程师
+				<br>Qualcomm开发者社区技术支持</h5>
+				<p class="teacher-item-text">从事安卓驱动研究，专注于display驱动研发，在嵌入式软件开发上有...</p>
+			</div>
+			<div class="teacher-item">
+				<img class="teacher-item-img" src="img/17.png">
+				<p class="teacher-item-name">小不能够好吧</p>
+				<h5 class="teacher-item-title">中科创达软件工程师
+				<br>Qualcomm开发者社区技术支持</h5>
+				<p class="teacher-item-text">从事安卓驱动研究，专注于display驱动研发，在嵌入式软件开发上有...</p>
+			</div>
+			<div class="teacher-item">
+				<img class="teacher-item-img" src="img/17.png">
+				<p class="teacher-item-name">小不能够好吧</p>
+				<h5 class="teacher-item-title">中科创达软件工程师
+				<br>Qualcomm开发者社区技术支持</h5>
+				<p class="teacher-item-text">从事安卓驱动研究，专注于display驱动研发，在嵌入式软件开发上有...</p>
+			</div>
+			<a class="teacher-item-left"></a>
+			<a class="teacher-item-right"></a>
+		</div>
+	</div>
+
+	<div class="product-section">
+		<img class="product-title" src="img/410C.png">
+		<div class="product-introduce">
+			<div class="product-img"><img src="img/DragonBoard™ 410c .jpg"></div>
+			<div class="product-describe">
+				<h2 class="product-title">DragonBoard™ 410c 开发板 </h2>
+				<p class="product-text">DragonBoard 410c将是首款基于Qualcomm Snapdragon 400 系列处理器的开发板。它有许多高级特性，强大的处理器，Wi-Fi和蓝牙连接，支持GPS。所有这些先进的功能都集成在仅有信用卡大小的一张开发板中。基于64bit计算的Snapdragon410处理器，DragonBoard 410c遵从96Boards消费版规格。</p>
+				<a class="product-button" href="javascript:;">立即购买</a>
+				<a class="product-button" href="javascript:;">了解更多</a>
+				<div class="correlation-product">
+					<span>相关产品</span>
+					<a class="correlation-product-item" href="javascript:;">DragonBoard 410c 开发套件</a>
+					<a class="correlation-product-item" href="javascript:;">96Boards Sensors夹层板</a>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="user-example-section">
+		<a class="user-example-item" href="javascript:;"><img src="img/user-example-1.png"></a>
+		<a class="user-example-item" href="javascript:;"><img src="img/user-example-2.png"></a>
+		<a class="user-example-item" href="javascript:;"><img src="img/user-example-3.png"></a>
+	</div>
+</body>
+</html>
