@@ -1,17 +1,3 @@
-   let clickOpen = document.getElementById('click-open');
-    let opitonItemChild = document.getElementsByClassName('opiton-item-child')[0];    
-    clickOpen.addEventListener('click',function(){
-      let tmp = opitonItemChild.getAttribute('class');
-      let activeIndex = tmp.indexOf('active');
-      if(activeIndex === -1){
-          opitonItemChild.setAttribute('class', 'opiton-item-child active');
-      }else{
-          opitonItemChild.setAttribute('class', 'opiton-item-child');
-      }
-    });
-  
-
-
 
   let tmp = {
       data:{
@@ -23,7 +9,12 @@
       },
       init:function(){
         this.addItem();   
-        this.bind();      
+        this.bind();
+        $('.opiton-item-father').on('click',this.add);      
+      },
+      add:function(){
+        let mmp = $(this).parent();
+        $(mmp).toggleClass('active');
       },
       bind:function(){
         $('#teacherNext').on('click',this.teacherNext);  
@@ -35,12 +26,14 @@
         let aa = $('.teacher-item').eq(0).clone(); 
         let bb = $('.teacher-item').eq(1).clone();
         let cc = $('.teacher-item').eq(2).clone();
-        let dd = $('.teacher-item').eq(teacherItemLength - 1).clone();
+        let dd = $('.teacher-item').eq(3).clone();
+        let ee = $('.teacher-item').eq(teacherItemLength - 1).clone();
 
         $('.teacher-content').append(aa);//append() 方法在被选元素的结尾（仍然在内部）插入指定内容。
         $('.teacher-content').append(bb);
         $('.teacher-content').append(cc);
-        $('.teacher-content').prepend(dd);//prepend() 方法在被选元素的开头插入指定内容。      
+        $('.teacher-content').append(dd);
+        $('.teacher-content').prepend(ee);//prepend() 方法在被选元素的开头插入指定内容。      
         $('.teacher-content').css('left', - teacherItemWidth +'px');
       },     
       teacherNext:function(){
@@ -66,8 +59,7 @@
         }else{
           tmp.data.isLock = true;
         }
-        let teacherListEle = $('.teacher-content'); 
-             
+        let teacherListEle = $('.teacher-content');      
         teacherListEle.animate({
           'left': - translateX + 'px'
         },
@@ -86,18 +78,3 @@
         }
       }
     tmp.init();   
-
-
-
-let mmp = {  
-  init:function(){
-    $('.opiton-item-father').on('click',this.add); 
-  },
-  add:function(){
-    let mmp = $(this).parent();
-    $(mmp).toggleClass('active');
-  },
-}
-mmp.init();
-
- 
