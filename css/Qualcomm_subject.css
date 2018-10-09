@@ -13,11 +13,7 @@ a{
 .head-section{
 	height: 74px;
 	background-color: #ffffff;
-	border-bottom: 2px solid #48ba64; /*#46b962, #87c88d, #5ea9a9, #71c47d;
-	/*border-bottom: 2px solid linear-gradient(#48ba64,#71c47d);*/
-	/*border-width: 2px;
-	border-style: solid;
-	border-background: linear-gradient(#48ba64,#71c47d);*/
+	border-bottom: 2px solid #48ba64; /*#46b962, #87c88d, #5ea9a9, #71c47d;*/
 }
 .head-contain{
 	width: 1000px;
@@ -34,6 +30,7 @@ a{
 }
 .head-register i{
 	margin:0 12px 0 12px;
+	font-style:normal；
 }
 .head-register-item{
 	display: inline;
@@ -163,6 +160,7 @@ a{
 	right: 20px;
 }
 .opiton-item-child{
+	position: relative;
 	height: 0px;
 	overflow: hidden;
 }
@@ -207,18 +205,18 @@ a{
 	margin-bottom: 18px
 }
 .course-suit{
-	font-size: 16px;
+	font-size: 12px;
 	color: #a0a0a0;
 	margin-bottom: 10px;
 }
 .course-suit-content{
-	font-size: 16px;
+	font-size: 12px;
 	color: #737373;
 	line-height: 22px;
 	margin-bottom: 17px;
 }
 .issue-time{
-	font-size: 16px;
+	font-size: 12px;
 	color: #a0a0a0;
 	margin-bottom: 18px;
 }
@@ -235,7 +233,7 @@ a{
 }
 .coures-lable p{
 	font-size: 12px;
-	color: #a0a0a0;
+	color: #999999;
 	margin-bottom: 11px;
 }
 .coures-lable a{
@@ -271,6 +269,7 @@ a{
 	align-self: center;
 }
 .interflow-itrm-button{
+	border-radius: 2px;
 	display: inline-block;
 	font-size: 12px;
 	line-height: 22px;
@@ -507,6 +506,6 @@ a{
 	color: #fff;
 	line-height: 32px;
 	padding:0 18px 0 18px;
-	border-radius: 2px;
+	border-radius: 3px;
 	background-color: #00a8ff;
 }
