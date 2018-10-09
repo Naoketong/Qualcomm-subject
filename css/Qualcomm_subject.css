@@ -5,7 +5,6 @@
 }
 body{
 	font-family: PingFangSC-Light,'STHeiti Light','helvetica neue','hiragino sans gb',arial,'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
-
 }
 a{
 	text-decoration: none;		
@@ -14,7 +13,7 @@ a{
 .head-section{
 	height: 74px;
 	background-color: #ffffff;
-	border-bottom: 2px solid #48ba64; *//*#46b962, #87c88d, #5ea9a9, #71c47d;
+	border-bottom: 2px solid #48ba64; /*#46b962, #87c88d, #5ea9a9, #71c47d;
 	/*border-bottom: 2px solid linear-gradient(#48ba64,#71c47d);*/
 	/*border-width: 2px;
 	border-style: solid;
@@ -32,9 +31,6 @@ a{
 .head-logo img{
 	width: 113px;
 	height: 42px;
-}
-.head-register{
-	
 }
 .head-register i{
 	margin:0 12px 0 12px;
@@ -129,9 +125,6 @@ a{
 .watch-title span{
 	margin:0 29px 0 17px;
 }
-.course-opiton-list{
-	
-}
 .course-opiton-item{
 	font-size: 0;
 }
@@ -152,14 +145,13 @@ a{
 	border-bottom: 2px solid #bbbbbb; 
 	transform: rotate(45deg);
 	position: absolute;
-	top:12px;
+	top:10px;
 	left: 23px;
 }
 .opiton-item-father p{
 	font-size: 14px;
 	color: #333;
 	line-height: 41px;
-	
 }
 .video-down{
 	display: inline-block;
@@ -171,12 +163,17 @@ a{
 	right: 20px;
 }
 .opiton-item-child{
+	height: 0px;
+	overflow: hidden;
+}
+.active .opiton-item-child{
 	position: relative;
 	width: 700px;
-	height: 40px;
+	height:40px; 
 	padding-left: 51px;
 	border-bottom: 1px solid #e4e4e4;
 }
+
 .opiton-item-child a{
 	display: inline-block;
 	font-size: 12px;
@@ -229,11 +226,9 @@ a{
 	color:#737373;
 	margin-left: 11px;  
 }
-
 .cooperation{
 	margin-top: 20px;
 }
-
 .coures-lable{
 	margin-top: 20px;
 	margin-bottom: 35px;
@@ -253,13 +248,11 @@ a{
 	padding:0 6px 0 6px;
 	border-radius: 1px;
 }
-
 .science-interflow h4{
 	font-size: 16px;
 	color:#333;
 	margin-bottom: 22px;
 }
-
 .interflow-button{
 	position: relative;
 }
@@ -277,7 +270,6 @@ a{
 	color: #666666;
 	align-self: center;
 }
-
 .interflow-itrm-button{
 	display: inline-block;
 	font-size: 12px;
@@ -293,104 +285,108 @@ a{
 	display: none;
 	top:55px;
 	left: 0px;
-
 }
 .interflow-button:hover .button-image{
 	display: inline-block;
 }
 
-
 /*授课老师*/
 .teacher-section{
-	width: 960px;
-	margin:0 auto;
+  width: 960px;
+  height: 100%;
+  margin:0 auto;
+  position: relative;
 }
 .teacher-title{
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .teacher-list{
-	position: relative;
-	width: 100%;
-	font-size: 0;
-	margin-bottom: 50px;
+  width: 960px;
+  font-size: 0;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.teacher-content{
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
 }
 .teacher-item{
-	display: inline-block;
-	width:240px;
-	height: 210px;
-	text-align: center;
+  display: inline-block;
+  width:240px;
+  text-align: center;
+  flex-shrink: 0;
 }
 .teacher-item-img{
-	width: 78px;
-	height: 78px;
-	border-radius: 50%;
-	margin-top: 12px;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  margin-top: 12px;
 }
 .teacher-item-name{
-	font-size: 14px;
-	color: #333;
-	margin:13px 0 12px;
+  font-size: 14px;
+  color: #333;
+  margin:13px 0 12px;
 }
 .teacher-item-title{
-	font-size: 12px;
-	color: #999999;
-	line-height: 18px;
-	margin-bottom: 12px;
+  font-size: 12px;
+  color: #999999;
+  line-height: 18px;
+  margin-bottom: 12px;
 }
 .teacher-item-text{
-	font-size: 12px;
-	color:#737373;
+  font-size: 12px;
+  color:#737373;
 }
 .teacher-item-left{
-	position: absolute;
-	top:50%;
-	left: 0;
-	display: inline-block;
-	width: 25px;
-	height: 40px;
-	background-color: #e2e6ea;
-	opacity: 0;
+  position: absolute;
+  top:50%;
+  left: 0;
+  display: inline-block;
+  width: 25px;
+  height: 40px;
+  background-color: #e2e6ea;
+  opacity: 0;
 }
 .teacher-item-left:after{
-	content: '';
-	position: absolute;
-	display: inline-block;
-	left: 10px;
-	top:15px;
-	width: 10px;
-	height: 10px;
-	border-left:2px solid #f6f6f6;
-	border-bottom:2px solid #f6f6f6;
-	transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 10px;
+  top:15px;
+  width: 10px;
+  height: 10px;
+  border-left:2px solid #f6f6f6;
+  border-bottom:2px solid #f6f6f6;
+  transform: rotate(45deg);
 }
 .teacher-item-right{
-	position: absolute;
-	top:50%;
-	right: 0;
-	display: inline-block;
-	width: 25px;
-	height: 40px;
-	background-color: #e2e6ea;
-	opacity: 0;
+  position: absolute;
+  top:50%;
+  right: 0;
+  display: inline-block;
+  width: 25px;
+  height: 40px;
+  background-color: #e2e6ea;
+  opacity: 0;
 }
 .teacher-item-right:after{
-	content: '';
-	position: absolute;
-	display: inline-block;
-	right: 10px;
-	top:15px;
-	width: 10px;
-	height: 10px;
-	border-right:2px solid #f6f6f6;
-	border-bottom:2px solid #f6f6f6;
-	transform: rotate(-45deg);
-
+  content: '';
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  top:15px;
+  width: 10px;
+  height: 10px;
+  border-right:2px solid #f6f6f6;
+  border-bottom:2px solid #f6f6f6;
+  transform: rotate(-45deg);
 }
 .teacher-list:hover .teacher-item-left{
-	opacity: 1;
+  opacity: 1;
 }
 .teacher-list:hover .teacher-item-right{
-	opacity: 1;
+  opacity: 1;
 }
 
 /*开发板*/
