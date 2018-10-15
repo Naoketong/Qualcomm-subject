@@ -1,0 +1,1084 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing:border-box;
+}
+body{
+	font-family: PingFangSC-Light,'STHeiti Light','helvetica neue','hiragino sans gb',arial,'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+}
+a{
+	text-decoration: none;		
+}
+/*导航栏*/
+.head-section{
+	height: 74px;
+	background-color: #ffffff;
+	border-bottom: 2px solid #48ba64; /*#46b962, #87c88d, #5ea9a9, #71c47d;*/
+}
+.head-contain{
+	width: 1000px;
+	margin:0 auto;
+	display: flex;
+	justify-content:space-between;
+}
+.head-logo{
+	align-self:center;	
+}
+.head-logo img{
+	width: 113px;
+	height: 42px;
+}
+.head-register i{
+	margin:0 12px 0 12px;
+	font-style:normal;
+	vertical-align: middle;
+}
+.head-register-item{
+	display: inline;
+	font-size: 12px;
+	line-height: 74px;
+	color: #666666;
+}
+.head-register-item:hover{
+	color: #39c05e;
+}
+
+/*背景图*/
+.banner-section{
+	height: 426px;
+	background-image: url(../img/head.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*点击导航*/
+.content-select-section{
+	background-color: #153188;
+}
+.content-select-list{
+	width: 960px;
+	height: 70px;
+	margin:0 auto;
+	font-size: 0;
+}
+.roll{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: #153188;
+	width: 100%;
+	text-align: center;
+}
+
+.content-select-item{
+	display: inline-block;
+	width: 192px;
+	font-size:16px;
+	color: #fff;
+	line-height: 70px;
+	text-align: center; 
+	cursor: pointer;
+}
+.active{
+	background-color: #2d4694;
+}
+.content-select-item:hover{
+	background-color: #2d4694;
+}
+
+/*课程简介*/
+.course-intro-section{
+	width: 960px;
+	margin:0 auto;
+}
+.course-intro-title{
+	margin: 60px 0 30px 0;
+}
+.course-intro-text{
+	font-size: 14px;
+	color: #333333;
+	line-height: 28px;
+	margin-bottom: 57px;
+}
+/*观看课程*/
+.watch-course-section{
+	width: 960px;
+	margin:0 auto;
+	font-size: 0;
+}
+.watch-title{
+	margin-bottom: 33px;
+}
+.watch-video{
+	text-align: center;
+	width: 100%;
+	height: 540px;
+	cursor: pointer;
+}
+/*视频选择*/
+.watch-contain{
+	display: flex;
+}
+.watch-course-options{
+	width: 720px;
+}
+.watch-title{
+	margin: 25px 0 20px;
+}
+.watch-title h4{
+	font-size: 18px;
+	color: #333333;
+	margin-bottom: 14px;
+}
+.watch-title p{
+	font-size: 12px;
+	color: #999999; 
+}
+.watch-title span{
+	margin:0 29px 0 17px;
+}
+.course-opiton-item{
+	font-size: 0;
+	cursor: pointer;
+}
+.opiton-item-father{
+	width: 700px;
+	height: 41px;
+	position: relative;
+	border-top: 1px solid #e4e4e4;
+	background-color: #f7f7f7;
+	padding-left: 51px;
+}
+.opiton-item-father:after{
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-right: 2px solid #bbbbbb;
+	border-bottom: 2px solid #bbbbbb; 
+	transform: rotate(45deg);
+	position: absolute;
+	top:10px;
+	left: 23px;
+}
+.opiton-item-father p{
+	font-size: 14px;
+	color: #333;
+	line-height: 41px;
+}
+.video-down{
+	display: inline-block;
+	background-image: url(../img/DOWNLOAD.png);
+	width: 17px;
+	height: 16px;
+	position: absolute;
+	top: 12px;
+	right: 20px;
+}
+.opiton-item-child{
+	position: relative;
+	height: 0px;
+	overflow: hidden;
+}
+.active .opiton-item-child{
+	position: relative;
+	width: 700px;
+	height:40px; 
+	padding-left: 51px;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.opiton-item-child a{
+	display: inline-block;
+	font-size: 12px;
+	color: #666666;
+	line-height: 41px;
+}
+.opiton-item-child a:hover{
+	color: #009df7;
+}
+.opiton-item-child i{
+	display: inline-block;
+	font-size: 12px;
+	color: #666;
+	line-height: 41px;
+	position: absolute;
+	right:20px;
+	font-style: normal;
+}
+/*课程信息+技术交流*/
+.course-information{
+	width: 100%;
+	height: 760px;
+	margin-left: 30px;
+}
+.information-title{
+	margin-top: 101px;
+}
+.information-title h3{
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 18px
+}
+.course-suit{
+	font-size: 12px;
+	color: #a0a0a0;
+	margin-bottom: 10px;
+}
+.course-suit-content{
+	font-size: 12px;
+	color: #737373;
+	line-height: 22px;
+	margin-bottom: 17px;
+}
+.issue-time{
+	font-size: 12px;
+	color: #a0a0a0;
+	margin-bottom: 18px;
+}
+.issue-time span{
+	color:#737373;
+	margin-left: 11px;  
+}
+.cooperation{
+	margin-top: 20px;
+}
+.coures-lable{
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+.coures-lable p{
+	font-size: 12px;
+	color: #999999;
+	margin-bottom: 11px;
+}
+.coures-lable a{
+	display: inline-block;
+	font-size: 12px;
+	color:  #666666;
+	background-color: #f7f7f7;
+	line-height: 20px;
+	margin: 0 5px 5px 0;
+	padding:0 6px 0 6px;
+	border-radius: 1px;
+}
+.science-interflow h4{
+	font-size: 16px;
+	color:#333;
+	margin-bottom: 22px;
+}
+.interflow-button{
+	position: relative;
+}
+.interflow-item{
+	display: flex;
+	margin-bottom: 15px;
+	flex-wrap:wrap;
+}
+.interflow-button p{
+	margin-left: 0;
+}
+.interflow-item p{
+	margin-left: 10px;
+	font-size: 12px;
+	color: #666666;
+	align-self: center;
+}
+.interflow-itrm-button{
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 22px;
+	padding:0 14px 0 14px;
+	color:#fff;
+	background-color: #00b1ff;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.button-image{
+	position: absolute;
+	display: none;
+	top:55px;
+	left: 0px;
+}
+.interflow-button:hover .button-image{
+	display: inline-block;
+}
+
+/*授课老师*/
+.teacher-section{
+  width: 960px;
+  height: 100%;
+  margin:0 auto;
+  position: relative;
+}
+.teacher-title{
+  margin-bottom: 40px;
+}
+.teacher-list{
+  width: 960px;
+  font-size: 0;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.teacher-content{
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.teacher-item{
+  display: inline-block;
+  width:240px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.teacher-item-img{
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  margin-top: 12px;
+}
+.teacher-item-name{
+  font-size: 14px;
+  color: #333;
+  margin:13px 0 12px;
+}
+.teacher-item-title{
+  font-size: 12px;
+  color: #999999;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+.teacher-item-text{
+  font-size: 12px;
+  color:#737373;
+}
+.teacher-item-left{
+  position: absolute;
+  top:50%;
+  left: 0;
+  display: inline-block;
+  width: 25px;
+  height: 40px;
+  background-color: #e2e6ea;
+  opacity: 0;
+  cursor: pointer;
+}
+.teacher-item-left:after{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 10px;
+  top:15px;
+  width: 10px;
+  height: 10px;
+  border-left:2px solid #f6f6f6;
+  border-bottom:2px solid #f6f6f6;
+  transform: rotate(45deg);
+}
+.teacher-item-right{
+  position: absolute;
+  top:50%;
+  right: 0;
+  display: inline-block;
+  width: 25px;
+  height: 40px;
+  background-color: #e2e6ea;
+  opacity: 0;
+  cursor: pointer;
+}
+.teacher-item-right:after{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  top:15px;
+  width: 10px;
+  height: 10px;
+  border-right:2px solid #f6f6f6;
+  border-bottom:2px solid #f6f6f6;
+  transform: rotate(-45deg);
+}
+.teacher-list:hover .teacher-item-left{
+  opacity: 1;
+}
+.teacher-list:hover .teacher-item-right{
+  opacity: 1;
+}
+
+/*开发板*/
+.product-section{
+	width: 960px;
+	margin:0 auto;
+	font-size: 0;
+	border-bottom: 1px solid #f5f5f5;
+}
+.product-title{
+	margin-bottom: 30px;
+}
+.product-introduce{
+	display: flex;
+	margin-bottom: 30px;
+}
+.product-img{
+}
+.product-img img{
+	width: 300px;
+	height: 210px;
+}
+.product-describe{
+	margin-left: 20px;
+}
+.product-title{
+	font-size: 20px;
+	color: #333333;
+}
+.product-text{
+	font-size: 13px;
+	color: #666666;
+	line-height: 23px;
+	margin-bottom: 15px;
+}
+.product-button{
+	display: inline-block;
+	font-size: 15px;
+	color: #00a8ff;
+	line-height: 40px;
+	padding:0 36px 0 36px;
+	border:1px solid #00a8ff;
+	border-radius: 3px;
+	margin-right: 15px;
+}
+.product-button:hover{
+	background-color: #00a8ff;
+	color: #fff;
+}
+.correlation-product{
+	margin-top: 25px;
+}
+.correlation-product span{
+	font-size: 15px;
+	color: #666666;
+	margin-right: 11px;
+}
+.correlation-product-item{
+	display: inline-block;
+	width: 196px;
+	text-align: center;
+	font-size: 12px;
+	color: #1c7c89;
+	background-color: #caeaef;
+	line-height: 30px;
+	border-radius: 50px;
+	margin-right:10px;
+}
+
+/*用户手册*/
+.user-example-section{
+	width: 960px;
+	margin:0 auto;
+	font-size: 0;
+	margin-top: 30px;
+	border-bottom: 1px solid #f5f5f5;
+}
+.user-example-item{
+	display: inline-block;
+	margin: 0 30px 30px 0;
+}
+.user-example-item:nth-child(3){
+	margin-right: 0px;
+}
+
+/*关于Qualcomm*/
+.about-Qualcomm-section{
+	width: 960px;
+	margin:0 auto;
+	font-size: 0;
+}
+.about-Qualcomm-title{
+	margin-top:30px;
+}
+.interflow-list{
+	margin-top:50px;
+	margin-bottom: 35px;
+}
+.interflow-conent-item{
+	display: inline-block;
+	width: 320px;
+	text-align: center;
+	vertical-align: top;
+}
+.interflow-item-title{
+	font-size: 14px;
+	color:#333333; 
+	margin:22px 0 13px;
+}
+.interflow-item-text{
+	font-size: 12px;
+	color: #a8a8a8;
+	margin-bottom: 15px;
+}
+.add-group{
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	line-height: 32px;
+	padding:0 18px 0 18px;
+	border-radius: 3px;
+	background-color: #00a8ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing:border-box;
+}
+body{
+	font-family: PingFangSC-Light,'STHeiti Light','helvetica neue','hiragino sans gb',arial,'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+}
+a{
+	text-decoration: none;		
+}
+/*导航栏*/
+.head-section{
+	height: 74px;
+	background-color: #ffffff;
+	border-bottom: 2px solid #48ba64; /*#46b962, #87c88d, #5ea9a9, #71c47d;*/
+}
+.head-contain{
+	width: 1000px;
+	margin:0 auto;
+	display: flex;
+	justify-content:space-between;
+}
+.head-logo{
+	align-self:center;	
+}
+.head-logo img{
+	width: 113px;
+	height: 42px;
+}
+.head-register i{
+	margin:0 12px 0 12px;
+	font-style:normal;
+	vertical-align: middle;
+}
+.head-register-item{
+	display: inline;
+	font-size: 12px;
+	line-height: 74px;
+	color: #666666;
+}
+.head-register-item:hover{
+	color: #39c05e;
+}
+
+/*背景图*/
+.banner-section{
+	height: 426px;
+	background-image: url(../img/head.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*点击导航*/
+.content-select-section{
+	background-color: #153188;
+}
+.content-select-section.roll{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	text-align: center;
+	width: 100%;
+	background-color: #153188;
+}
+.content-select-list{
+	width: 960px;
+	height: 70px;
+	margin:0 auto;
+	font-size: 0;
+}
+.content-select-item{
+	display: inline-block;
+	width: 192px;
+	font-size:16px;
+	color: #fff;
+	line-height: 70px;
+	text-align: center; 
+	cursor: pointer;
+}
+.content-select-list.active{
+	background-color: #2d4694;
+}
+.content-select-item:hover{
+	background-color: #2d4694;
+}
+
+/*课程简介*/
+.course-intro-section{
+	width: 960px;
+	margin:0 auto;
+}
+.course-intro-title{
+	margin: 60px 0 30px 0;
+}
+.course-intro-text{
+	font-size: 14px;
+	color: #333333;
+	line-height: 28px;
+	margin-bottom: 57px;
+}
+/*观看课程*/
+.watch-course-section{
+	width: 960px;
+	margin:0 auto;
+	font-size: 0;
+}
+.watch-title{
+	margin-bottom: 33px;
+}
+.watch-video{
+	text-align: center;
+	width: 100%;
+	height: 540px;
+	cursor: pointer;
+}
+/*视频选择*/
+.watch-contain{
+	display: flex;
+}
+.watch-course-options{
+	width: 720px;
+}
+.watch-title{
+	margin: 25px 0 20px;
+}
+.watch-title h4{
+	font-size: 18px;
+	color: #333333;
+	margin-bottom: 14px;
+}
+.watch-title p{
+	font-size: 12px;
+	color: #999999;
+}
+.watch-title span{
+	margin:0 29px 0 17px;
+}
+.course-opiton-item{
+	font-size: 0;
+	cursor: pointer;
+}
+.opiton-item-father{
+	width: 700px;
+	height: 41px;
+	position: relative;
+	border-top: 1px solid #e4e4e4;
+	background-color: #f7f7f7;
+	padding-left: 51px;
+}
+.opiton-item-father:after{
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-right: 2px solid #bbbbbb;
+	border-bottom: 2px solid #bbbbbb; 
+	transform: rotate(45deg);
+	position: absolute;
+	top:10px;
+	left: 23px;
+}
+.opiton-item-father p{
+	font-size: 14px;
+	color: #333;
+	line-height: 41px;
+}
+.video-down{
+	display: inline-block;
+	background-image: url(../img/DOWNLOAD.png);
+	width: 17px;
+	height: 16px;
+	position: absolute;
+	top: 12px;
+	right: 20px;
+}
+.opiton-item-child{
+	position: relative;
+	height: 0px;
+	overflow: hidden;
+}
+.active .opiton-item-child{
+	position: relative;
+	width: 700px;
+	height:40px; 
+	padding-left: 51px;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.opiton-item-child a{
+	display: inline-block;
+	font-size: 12px;
+	color: #666666;
+	line-height: 41px;
+}
+.opiton-item-child a:hover{
+	color: #009df7;
+}
+.opiton-item-child i{
+	display: inline-block;
+	font-size: 12px;
+	color: #666;
+	line-height: 41px;
+	position: absolute;
+	right:20px;
+	font-style: normal;
+}
+/*课程信息+技术交流*/
+.course-information{
+	width: 100%;
+	height: 760px;
+	margin-left: 30px;
+}
+.information-title{
+	margin-top: 101px;
+}
+.information-title h3{
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 18px
+}
+.course-suit{
+	font-size: 12px;
+	color: #a0a0a0;
+	margin-bottom: 10px;
+}
+.course-suit-content{
+	font-size: 12px;
+	color: #737373;
+	line-height: 22px;
+	margin-bottom: 17px;
+}
+.issue-time{
+	font-size: 12px;
+	color: #a0a0a0;
+	margin-bottom: 18px;
+}
+.issue-time span{
+	color:#737373;
+	margin-left: 11px;  
+}
+.cooperation{
+	margin-top: 20px;
+}
+.coures-lable{
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+.coures-lable p{
+	font-size: 12px;
+	color: #999999;
+	margin-bottom: 11px;
+}
+.coures-lable a{
+	display: inline-block;
+	font-size: 12px;
+	color:  #666666;
+	background-color: #f7f7f7;
+	line-height: 20px;
+	margin: 0 5px 5px 0;
+	padding:0 6px 0 6px;
+	border-radius: 1px;
+}
+.science-interflow h4{
+	font-size: 16px;
+	color:#333;
+	margin-bottom: 22px;
+}
+.interflow-button{
+	position: relative;
+}
+.interflow-item{
+	display: flex;
+	margin-bottom: 15px;
+	flex-wrap:wrap;
+}
+.interflow-button p{
+	margin-left: 0;
+}
+.interflow-item p{
+	margin-left: 10px;
+	font-size: 12px;
+	color: #666666;
+	align-self: center;
+}
+.interflow-itrm-button{
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 22px;
+	padding:0 14px 0 14px;
+	color:#fff;
+	background-color: #00b1ff;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.button-image{
+	position: absolute;
+	display: none;
+	top:55px;
+	left: 0px;
+}
+.interflow-button:hover .button-image{
+	display: inline-block;
+}
+
+/*授课老师*/
+.teacher-section{
+  width: 960px;
+  height: 100%;
+  margin:0 auto;
+  position: relative;
+}
+.teacher-title{
+  margin-bottom: 40px;
+}
+.teacher-list{
+  width: 960px;
+  font-size: 0;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.teacher-content{
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.teacher-item{
+  display: inline-block;
+  width:240px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.teacher-item-img{
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  margin-top: 12px;
+}
+.teacher-item-name{
+  font-size: 14px;
+  color: #333;
+  margin:13px 0 12px;
+}
+.teacher-item-title{
+  font-size: 12px;
+  color: #999999;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+.teacher-item-text{
+  font-size: 12px;
+  color:#737373;
+}
+.teacher-item-left{
+  position: absolute;
+  top:50%;
+  left: 0;
+  display: inline-block;
+  width: 25px;
+  height: 40px;
+  background-color: #e2e6ea;
+  opacity: 0;
+  cursor: pointer;
+}
+.teacher-item-left:after{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 10px;
+  top:15px;
+  width: 10px;
+  height: 10px;
+  border-left:2px solid #f6f6f6;
+  border-bottom:2px solid #f6f6f6;
+  transform: rotate(45deg);
+}
+.teacher-item-right{
+  position: absolute;
+  top:50%;
+  right: 0;
+  display: inline-block;
+  width: 25px;
+  height: 40px;
+  background-color: #e2e6ea;
+  opacity: 0;
+  cursor: pointer;
+}
+.teacher-item-right:after{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  top:15px;
+  width: 10px;
+  height: 10px;
+  border-right:2px solid #f6f6f6;
+  border-bottom:2px solid #f6f6f6;
+  transform: rotate(-45deg);
+}
+.teacher-list:hover .teacher-item-left{
+  opacity: 1;
+}
+.teacher-list:hover .teacher-item-right{
+  opacity: 1;
+}
+
+/*开发板*/
+.product-section{
+	width: 960px;
+	margin:0 auto;
+	font-size: 0;
+	border-bottom: 1px solid #f5f5f5;
+}
+.product-title{
+	margin-bottom: 30px;
+}
+.product-introduce{
+	display: flex;
+	margin-bottom: 30px;
+}
+.product-img{
+}
+.product-img img{
+	width: 300px;
+	height: 210px;
+}
+.product-describe{
+	margin-left: 20px;
+}
+.product-title{
+	font-size: 20px;
+	color: #333333;
+}
+.product-text{
+	font-size: 13px;
+	color: #666666;
+	line-height: 23px;
+	margin-bottom: 15px;
+}
+.product-button{
+	display: inline-block;
+	font-size: 15px;
+	color: #00a8ff;
+	line-height: 40px;
+	padding:0 36px 0 36px;
+	border:1px solid #00a8ff;
+	border-radius: 3px;
+	margin-right: 15px;
+}
+.product-button:hover{
+	background-color: #00a8ff;
+	color: #fff;
+}
+.correlation-product{
+	margin-top: 25px;
+}
+.correlation-product span{
+	font-size: 15px;
+	color: #666666;
+	margin-right: 11px;
+}
+.correlation-product-item{
+	display: inline-block;
+	width: 196px;
+	text-align: center;
+	font-size: 12px;
+	color: #1c7c89;
+	background-color: #caeaef;
+	line-height: 30px;
+	border-radius: 50px;
+	margin-right:10px;
+}
+
+/*用户手册*/
+.user-example-section{
+	width: 960px;
+	margin:0 auto;
+	font-size: 0;
+	margin-top: 30px;
+	border-bottom: 1px solid #f5f5f5;
+}
+.user-example-item{
+	display: inline-block;
+	margin: 0 30px 30px 0;
+}
+.user-example-item:nth-child(3){
+	margin-right: 0px;
+}
+
+/*关于Qualcomm*/
+.about-Qualcomm-section{
+	width: 960px;
+	margin:0 auto;
+	font-size: 0;
+}
+.about-Qualcomm-title{
+	margin-top:30px;
+}
+.interflow-list{
+	margin-top:50px;
+	margin-bottom: 35px;
+}
+.interflow-conent-item{
+	display: inline-block;
+	width: 320px;
+	text-align: center;
+	vertical-align: top;
+}
+.interflow-item-title{
+	font-size: 14px;
+	color:#333333; 
+	margin:22px 0 13px;
+}
+.interflow-item-text{
+	font-size: 12px;
+	color: #a8a8a8;
+	margin-bottom: 15px;
+}
+.add-group{
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	line-height: 32px;
+	padding:0 18px 0 18px;
+	border-radius: 3px;
+	background-color: #00a8ff;
+}
